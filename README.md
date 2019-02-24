@@ -3,14 +3,14 @@
 ***
 - 機械学習
 - ベイズ統計
-- SQL
-- pandas
 - 可視化
 
 ### Outlooks
 ***
 - LIMEとSHAPを使用した機械学習モデル解釈
   - [LIME&SHAP-機械学習モデルによる予測結果の説明性-](https://speakerdeck.com/hightensan/lime-and-shap-ji-jie-xue-xi-moderuniyoruyu-ce-jie-guo-falseshuo-ming-xing)
+- A/Bテスト
+  - [Pythonで体験するベイズ推論](https://www.morikita.co.jp/books/book/3155)
 - 異常検知
   - [Pythonと実例で学ぶ機械学習: 識別・予測・異常検知](https://www.ohmsha.co.jp/book/9784274222788/)
 - 時系列分析
