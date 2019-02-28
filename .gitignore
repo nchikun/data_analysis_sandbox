@@ -1,7 +1,0 @@
-.gitignore
-.ipynb_checkpoints
-natural_language_processing
-sandbox
-.python-version
-.DS_Store
-bigquery
