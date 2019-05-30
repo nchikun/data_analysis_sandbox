@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45830b3b-67c5-4d00-a5ed-44b0dc14f17a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/abtest_binomial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/test_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/test_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/bayesian_methods_for_hackers/bayesian_ab_testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/bayesian_methods_for_hackers/bayesian_ab_testing.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cta.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/statistical_analysis_of_contingency_table/statistical_analysis_of_contingency_table_1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/statistical_analysis_of_contingency_table/statistical_analysis_of_contingency_table_1.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/cta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="235">
+              <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
               <folding>
                 <element signature="e#1#19#0" expanded="true" />
               </folding>
@@ -45,6 +41,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_get_all_sum</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -424,8 +425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/cta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="235">
+          <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>

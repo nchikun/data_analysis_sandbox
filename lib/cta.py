@@ -25,12 +25,14 @@ class ContingencyTableAnalysis:
         'none': 全セルが確定的
     """
 
-    # Const
-
     _CONST_LAWS = ['all', 'raw_all', 'col_all', 'none']
     _ERROR_CONST_LAW = "const_law must be inputted 'all' or 'raw_all' or 'col_all', or 'none'."
 
-    def __init__(self, df_cont_tb: pd.DataFrame, sum_raw_name='raw_all', sum_col_name='col_all', const_law='all'):
+    def __init__(self,
+                 df_cont_tb: pd.DataFrame,
+                 sum_raw_name='raw_all',
+                 sum_col_name='col_all',
+                 const_law='all'):
         if const_law not in self._CONST_LAWS:
             raise AttributeError(self._ERROR_CONST_LAW)
 
@@ -38,8 +40,6 @@ class ContingencyTableAnalysis:
         self.sum_raw_name = sum_raw_name
         self.sum_col_name = sum_col_name
         self.const_law = const_law
-
-    # Public
 
     def sum_all(self) -> pd.DataFrame:
         """
@@ -133,15 +133,15 @@ class ContingencyTableAnalysis:
         df_src = self.df_cont_tb.copy()
         df_est = self.get_expected_frequency()
 
-        # chi2 fitting
+        # カイ二乗適合度
         df_fit = (df_src - df_est) ** 2 / df_est
         chi2_fit = df_fit.sum(axis='columns').sum()
 
-        # chi2 percentage point
+        # カイ二乗分布上側確率
         df = (len(self.df_cont_tb.index) - 1) * (len(self.df_cont_tb.columns) - 1)
         chi2_per = stats.chi2.ppf(q=per_point, df=df)
 
-        # testing
+        # 検定
         test_result = False if chi2_fit > chi2_per else True
 
         test_info = {
@@ -153,17 +153,6 @@ class ContingencyTableAnalysis:
 
     def likelihood_ratio_test(self):
         pass
-
-    def get_all(self):
-        """
-        モジュール内結果を全て取得する。
-        """
-        pass
-
-    # Private
-
-    def _get_all_sum(self, df_sum_all: pd.DataFrame) -> int:
-        return df_sum_all.loc[self.sum_raw_name, self.sum_col_name]
 
     @staticmethod
     def sum_row(df: pd.DataFrame, raw_name: str) -> pd.DataFrame:
