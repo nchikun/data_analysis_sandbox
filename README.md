@@ -1,2 +1,2 @@
-# data_analysis_sandbox
-データ分析勉強用
+# Sandbox Analysis
+For practicing data analysis.
