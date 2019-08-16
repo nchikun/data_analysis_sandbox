@@ -1,10 +1,7 @@
-def test_1():
-    a = 1
-    b = 2
-    assert a == b
+from mock import Mock
 
 
-def test_2():
-    a = 1
-    b = 2
-    assert a != b
+def test_mysum():
+    m = Mock()
+    m.return_value = 3
+    m()
